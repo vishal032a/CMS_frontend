@@ -5,7 +5,7 @@ const Login = ()=>{
     const [password,setpassword] = useState("");
     const navigate = useNavigate();
     const handle_login = async ()=>{
-        let result = await fetch('http://localhost:5000/login',{
+        let result = await fetch('https://cms-api-qr8o.onrender.com/login',{
             method:'post',
             body:JSON.stringify({email,password}),
             headers:{

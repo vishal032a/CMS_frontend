@@ -39,7 +39,7 @@ const AddProduct = () => {
             names_of_files.push(file.name);
         }
 
-        let result_da = await fetch('http://localhost:5000/add-content',{
+        let result_da = await fetch('https://cms-api-qr8o.onrender.com/add-content',{
             method:'post',
             body:JSON.stringify({name,email,blog_name,description,names_of_files}),
             headers:{
@@ -58,7 +58,7 @@ const AddProduct = () => {
 
         
 
-        let result_up = await fetch(`http://localhost:5000/upload/${user_id}/${content_id}`, {
+        let result_up = await fetch(`https://cms-api-qr8o.onrender.com//upload/${user_id}/${content_id}`, {
             method: 'POST',
             body: formData,
         });

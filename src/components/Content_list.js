@@ -12,7 +12,7 @@ const ContentList = () => {
     }, [])
 
     const getContent = async () => {
-        let result = await fetch('http://localhost:5000/content')
+        let result = await fetch('https://cms-api-qr8o.onrender.com/content')
 
         result = await result.json();
 
@@ -20,7 +20,7 @@ const ContentList = () => {
     }
 
     const deletecontent = async (content_id)=>{
-        let result = await fetch(`http://localhost:5000/delete/${userid}/${content_id}`,{
+        let result = await fetch(`https://cms-api-qr8o.onrender.com/delete/${userid}/${content_id}`,{
             method:'delete'
         })
 
