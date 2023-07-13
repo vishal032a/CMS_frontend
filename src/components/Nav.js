@@ -19,7 +19,6 @@ const Nav = ()=>{
                     <ul>
                         <li><Link to="/">Contents</Link></li>
                         <li><Link to="/add">Add Content</Link></li>
-                        <li><Link to="/update">Update Content</Link></li>
                         <li><Link to="/profile">Profile</Link></li>
                         <li><Link onClick={logout} to="/login">Logout({JSON.parse(auth).name})</Link></li>
                     </ul>
@@ -36,7 +35,6 @@ const Nav = ()=>{
 
                 <Route path='/' element={<ContentList/>}/>
                 <Route path='/add' element={<AddProduct/>}/>
-                <Route path='/update' element={<h1>update product here </h1>}/>
                 <Route path='/profile' element={<h1>here is your profile section</h1>}/>
                 <Route path='/logout' element={<h1>logout from here </h1>}/>
 

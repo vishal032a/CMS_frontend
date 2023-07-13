@@ -67,7 +67,7 @@ const AddProduct = () => {
 
 
 
-        if(result_da && result_up){
+        if(result_da || result_up){
             navigate('/');
         }
 
